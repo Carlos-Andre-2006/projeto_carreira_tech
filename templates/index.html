@@ -1,122 +1,118 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carreiras Tech</title>
+{% extends "modelo.html" %}
+{% block conteudo %}
 
-    <!-- Bootstrap 5 -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+<header>
+    <h1 class="fw-bold">Carreiras Tech</h1>
+    <p class="lead">Descubra as principais profissões do mercado de tecnologia e o que cada área faz.</p>
 
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
-</head>
 
-<body>
+</header>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1 class="fw-bold">Carreiras Tech</h1>
-        <p class="lead">Descubra as principais profissões do mercado de tecnologia e o que cada área faz.</p>
-    </header>
+<div class="row g-4 py-4">
 
-    <!-- Conteúdo -->
-    <div class="container py-5">
-
-        <div class="row g-4">
-
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="card career-card p-3 h-100">
-                    <h4 class="fw-bold text-primary">Front-end Developer</h4>
-                    <p>Especialista em criar interfaces visuais e experiências interativas para sites e aplicações web.</p>
-                    <ul>
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>React, Vue, Bootstrap</li>
-                        <li>Foco em usabilidade e design responsivo</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card career-card p-3 h-100">
-                    <h4 class="fw-bold text-primary">Back-end Developer</h4>
-                    <p>Responsável pela lógica do servidor, bancos de dados e APIs que sustentam aplicações.</p>
-                    <ul>
-                        <li>Python, Java, Node.js</li>
-                        <li>Banco de Dados SQL / NoSQL</li>
-                        <li>APIs, autenticação, segurança</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-4">
-                <div class="card career-card p-3 h-100">
-                    <h4 class="fw-bold text-primary">Engenheiro de Dados</h4>
-                    <p>Profissional que projeta sistemas para coletar, armazenar e processar grandes volumes de dados.</p>
-                    <ul>
-                        <li>Python, SQL</li>
-                        <li>ETL, Data Lakes</li>
-                        <li>Cloud (AWS, Azure, GCP)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-md-4">
-                <div class="card career-card p-3 h-100">
-                    <h4 class="fw-bold text-primary">Cientista de Dados</h4>
-                    <p>Análise de dados usando estatística e machine learning para extrair conhecimento e previsões.</p>
-                    <ul>
-                        <li>Python, Pandas, Scikit-learn</li>
-                        <li>Modelagem estatística</li>
-                        <li>IA e aprendizado de máquina</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-md-4">
-                <div class="card career-card p-3 h-100">
-                    <h4 class="fw-bold text-primary">DevOps Engineer</h4>
-                    <p>Une desenvolvimento e operações para otimizar automações, deploys e infraestrutura.</p>
-                    <ul>
-                        <li>Docker, Kubernetes</li>
-                        <li>CI/CD (GitHub Actions, GitLab)</li>
-                        <li>Monitoramento e cloud</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-md-4">
-                <div class="card career-card p-3 h-100">
-                    <h4 class="fw-bold text-primary">Cybersecurity Analyst</h4>
-                    <p>Protege sistemas e redes contra ataques, vulnerabilidades e invasões.</p>
-                    <ul>
-                        <li>Testes de Penetração</li>
-                        <li>Firewall, VPN, criptografia</li>
-                        <li>Análise de vulnerabilidades</li>
-                    </ul>
-                </div>
-            </div>
-
+    <div class="col-md-4">
+        <div class="card career-card p-3 h-100">
+            <h4 class="fw-bold text-primary">Front-end Developer</h4>
+            <p>Criação de interfaces visuais e experiência do usuário.</p>
         </div>
     </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2025 - Guia de Carreiras Tech</p>
-    </footer>
+    <div class="col-md-4">
+        <div class="card career-card p-3 h-100">
+            <h4 class="fw-bold text-primary">Back-end Developer</h4>
+            <p>Desenvolve a lógica, banco de dados e regras por trás das aplicações.</p>
+        </div>
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <div class="col-md-4">
+        <div class="card career-card p-3 h-100">
+            <h4 class="fw-bold text-primary">Full Stack Developer</h4>
+            <p>Atua tanto no front-end quanto no back-end, dominando toda a aplicação.</p>
+        </div>
+    </div>
 
-</body>
-</html>
+    <div class="col-md-4">
+        <div class="card career-card p-3 h-100">
+            <h4 class="fw-bold text-primary">UI/UX Designer</h4>
+            <p>Cria interfaces intuitivas e focadas na experiência do usuário.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card career-card p-3 h-100">
+            <h4 class="fw-bold text-primary">Engenheiro de Dados</h4>
+            <p>Constrói estruturas de armazenamento e pipelines de dados.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card career-card p-3 h-100">
+            <h4 class="fw-bold text-primary">Cientista de Dados</h4>
+            <p>Analisa grandes volumes de dados para gerar insights e previsões.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container py-4">
+
+    <h2 class="fw-bold text-center mb-4">História de Cada Carreira</h2>
+
+    <div class="list-group">
+
+        <div class="list-group-item">
+            <h4 class="text-primary">Front-end Developer</h4>
+            <p>
+                Surgiu nos anos 1990 com o início da web. Quando HTML, CSS e JavaScript apareceram,
+                empresas passaram a precisar de sites cada vez mais visuais e interativos. Assim nasceu
+                o especialista em interface e experiência do usuário.
+            </p>
+        </div>
+
+        <div class="list-group-item">
+            <h4 class="text-primary">Back-end Developer</h4>
+            <p>
+                Desde os sistemas antigos dos anos 70 e 80 já existia a necessidade de lógica,
+                servidores e bancos de dados. Na era da internet, o back-end se tornou o “cérebro”
+                das aplicações.
+            </p>
+        </div>
+
+        <div class="list-group-item">
+            <h4 class="text-primary">Full Stack Developer</h4>
+            <p>
+                Ganhou força nos anos 2000, quando startups precisavam de profissionais
+                capazes de trabalhar tanto no front quanto no back para construir sistemas completos.
+            </p>
+        </div>
+
+        <div class="list-group-item">
+            <h4 class="text-primary">UI/UX Designer</h4>
+            <p>
+                Nasceu quando empresas como Apple e Google perceberam que a experiência do usuário
+                era tão importante quanto a tecnologia. Assim surgiram os especialistas em design
+                de interface e usabilidade.
+            </p>
+        </div>
+
+        <div class="list-group-item">
+            <h4 class="text-primary">Engenheiro de Dados</h4>
+            <p>
+                Com o boom do Big Data a partir de 2010, empresas passaram a gerar volumes
+                gigantescos de dados. Esse profissional surgiu para organizar, armazenar
+                e preparar esses dados.
+            </p>
+        </div>
+
+        <div class="list-group-item">
+            <h4 class="text-primary">Cientista de Dados</h4>
+            <p>
+                Popularizado em 2012, quando dados se tornaram essenciais para decisões.
+                Une estatística, programação e machine learning para gerar previsões e insights.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

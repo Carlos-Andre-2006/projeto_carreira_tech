@@ -11,15 +11,15 @@ def index():
 def sobre_equipe():
     return render_template('sobre_equipe.html')
 
-@app.route('/carreiras/backend')
+@app.route('/backend')
 def carreira_backend():
     return render_template('back_end.html')
 
-@app.route('/carreiras/frontend')
+@app.route('/frontend')
 def carreira_frontend():
     return render_template('front_end.html')
 
-@app.route('/carreiras/dados')
+@app.route('/dados')
 def carreira_dados():
     return render_template('dados.html')
 
